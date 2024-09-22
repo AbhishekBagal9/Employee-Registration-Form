@@ -1,179 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR portal</title>
     <link rel="icon" href="images/form.png" />
     <style>
-      header {
-        background-color: #213970;
-        text-align: center;
-        padding: 1%;
-        color: aliceblue;
-      }
+        header {
+            background-color: #213970;
+            text-align: center;
+            padding: 1%;
+            color: aliceblue;
+        }
 
-      html,
-      body{
-        scroll-behavior: smooth;
-      }
+        html, body {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background-color: #cbdefe;
+            font-family: serif;
+            font-size: large;
+        }
 
-      footer {
-        background-color: #213970;
-        text-align: center;
-        padding: 1%;
-        color: aliceblue;
-      }
+        footer {
+            background-color: #213970;
+            text-align: center;
+            padding: 1%;
+            color: aliceblue;
+        }
 
-      .registeration {
-        margin-left: auto;
-        margin-right: auto;
-        width: max-content;
-      }
+        .registeration {
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+        }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-      th,
-      td {
-        border: 1px solid #213970;
-      }
+        th, td {
+            border: 1px solid #213970;
+        }
 
-      .Directory {
-        text-align: center;
-      }
+        .Directory, .Contactus {
+            text-align: center;
+        }
 
-      .Contactus {
-        text-align: center;
-      }
+        .center {
+            margin-top: 0px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
 
-      table {
-        border: 2px;
-        border-collapse: collapse;
-      }
+        .navitem {
+            display: inline;
+            padding: 45px;
+        }
 
-      body {
-        margin: 0%;
-        padding: 0%;
-        background-color: #cbdefe;
-        font-family: serif;
-        font-size: large;
-      }
+        .navitem a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
 
-      .center {
-        margin-top: 0px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-      }
-
-      .navitem {
-        display: inline;
-        padding: 45px;
-      }
-
-      .navitem a {
-        text-decoration: none;
-        color: whitesmoke;
-      }
-
-      #submit {
-        text-align: center;
-      }
+        #submit {
+            text-align: center;
+        }
     </style>
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
-      <h1>Welcome to Company HR Portal</h1>
-      <nav>
-        <ul>
-          <li class="navitem">
-            <a href="#Employee-registration">Employee registration</a>
-          </li>
-          <li class="navitem">
-            <a href="#Employee-Directory">Employee Directory</a>
-          </li>
-          <li class="navitem"><a href="#Contact-Us">Contact Us</a></li>
-        </ul>
-      </nav>
+        <h1>Welcome to Company HR Portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem">
+                    <a href="#Employee-registration">Employee registration</a>
+                </li>
+                <li class="navitem">
+                    <a href="#Employee-Directory">Employee Directory</a>
+                </li>
+                <li class="navitem"><a href="#Contact-Us">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <img src="images/bg.png" alt="baground image" class="center" />
+    <img src="images/bg.png" alt="background image" class="center" />
 
     <section id="Employee-registration" class="registeration">
-      <h2>Employee registration</h2>
-      <p>Fill the below form to register as <em>employee</em> :</p>
-      <br />
-      <label for="name">Name</label>
-      <input type="text" placeholder="Enter your name" id="name" /><br /><br />
-      <label for="email">Emailid</label>
-      <input type="email" placeholder="Enter email" id="email" /><br /><br />
-      <label for="passward">Passward</label>
-      <input
-        type="passward"
-        placeholder="Enter passward"
-        id="passward"
-      /><br /><br />
-      <label for="age">Age</label>
-      <input type="number" placeholder="Enter Age" id="age" /><br /><br />
-      <label for="Role">Role</label>
-      <select name="" id="">
-        <option value="Software Engineer">Software Engineer</option>
-        <option value="Desiner">Designer</option>
-        <option value="Product Manager">Product Manager</option></select
-      ><br /><br />
-      <label for="Joining_date">Joining date</label>
-      <input type="date" name="" id="Joining_date" /><br /><br />
+        <h2>Employee registration</h2>
+        <p>Fill the below form to register as <em>employee</em>:</p>
+        <br />
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" id="name" /><br /><br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" id="email" /><br /><br />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" /><br /><br />
+        <label for="age">Age</label>
+        <input type="number" placeholder="Enter Age" id="age" /><br /><br />
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Designer">Designer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select><br /><br />
+        <label for="Joining_date">Joining date</label>
+        <input type="date" id="Joining_date" /><br /><br />
 
-      <input type="submit" name="" id="submit" value"submit" /><br /><br />
+        <input type="submit" id="submit" value="submit" /><br /><br />
     </section>
     <section id="Employee-Directory" class="Directory">
-      <h2>Employee Directory</h2>
-      <p>List of all Employees:</p>
-      <table>
-        <tr>
-          <th>Employee Id</th>
-          <th>Employee Name</th>
-          <th>Employee Role</th>
-        </tr>
-        <tr>
-          <td>2345</td>
-          <td>Abhi</td>
-          <td>Software Engineer</td>
-        </tr>
-        <tr>
-          <td>5435</td>
-          <td>Shiv</td>
-          <td>product mangnager</td>
-        </tr>
-        <tr>
-          <td>8976</td>
-          <td>Akay</td>
-          <td>Designer</td>
-        </tr>
-      </table>
+        <h2>Employee Directory</h2>
+        <p>List of all Employees:</p>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>2345</td>
+                <td>Abhi</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>5435</td>
+                <td>Shiv</td>
+                <td>Product Manager</td>
+            </tr>
+            <tr>
+                <td>8976</td>
+                <td>Akay</td>
+                <td>Designer</td>
+            </tr>
+        </table>
     </section>
     <section id="Contact-Us" class="Contactus">
-      <h2>Contact-Us</h2>
-      <p>
-        You can Contact at Company@official.com or visit us between 9am to 6pm
-      </p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121065.07943686744!2d73.74509993819134!3d18.516076091939173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10062dba2ad%3A0xdf9e9ac21d1f8727!2sMICROSOFT%20INDIA%20(R%26D)%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1718022269157!5m2!1sen!2sin"
-        width="300"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        <h2>Contact Us</h2>
+        <p>You can contact us at Company@official.com or visit us between 9 AM to 6 PM</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121065.07943686744!2d73.74509993819134!3d18.516076091939173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10062dba2ad%3A0xdf9e9ac21d1f8727!2sMICROSOFT%20INDIA%20(R%26D)%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1718022269157!5m2!1sen!2sin"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
     </section>
 
     <footer>
-      <h2>@ 2024 CompanyName</h2>
+        <h2>@ 2024 CompanyName</h2>
     </footer>
-  </body>
+</body>
 </html>
